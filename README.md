@@ -129,6 +129,7 @@ npm i @ignite-ui/react@latest
 
 ## Pacotes
 
+### Front-end
 - [Phosphor-Icons](https://phosphoricons.com/)
 
 ```bash
@@ -142,3 +143,32 @@ npm i phosphor-react
 ```bash
 npm i react-hook-form @hookform/resolvers zod
 ```
+
+
+
+
+### Back-end
+
+- [Prisma](https://www.prisma.io/)
+
+```bash
+npm i prisma -D
+```
+
+
+```bash
+npm i @prisma/client
+```
+
+
+```bash
+npx prisma init --datasource-provider SQLite
+```
+Vou mudar o banco para PostgreSQL depois.
+
+
+```bash
+```
+
+
+
