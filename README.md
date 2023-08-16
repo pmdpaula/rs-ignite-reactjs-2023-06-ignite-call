@@ -125,3 +125,20 @@ module.exports = {
 npm i @ignite-ui/react@latest
 ```
 
+
+
+## Pacotes
+
+- [Phosphor-Icons](https://phosphoricons.com/)
+
+```bash
+npm i phosphor-react
+```
+
+
+
+-[Formulário](https://react-hook-form.com/)
+
+```bash
+npm i react-hook-form @hookform/resolvers zod
+```
