@@ -153,22 +153,26 @@ npm i react-hook-form @hookform/resolvers zod
 
 ```bash
 npm i prisma -D
-```
-
-
-```bash
 npm i @prisma/client
-```
 
-
-```bash
 npx prisma init --datasource-provider SQLite
 ```
 Vou mudar o banco para PostgreSQL depois.
 
 
+
+
+- [Axios](https://axios-http.com/)
+
 ```bash
+npm i axios
 ```
 
 
 
+- [Cookies - nookies](https://www.npmjs.com/package/nookies)
+
+```bash
+npm i nookies
+npm i -D @types/cookie
+```
