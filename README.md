@@ -176,3 +176,11 @@ npm i axios
 npm i nookies
 npm i -D @types/cookie
 ```
+
+
+- [Autenticação - NextAuth](https://next-auth.js.org/)
+
+```bash
+npm install next-auth
+```
+

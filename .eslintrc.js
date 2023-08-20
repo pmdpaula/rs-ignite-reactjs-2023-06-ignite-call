@@ -10,7 +10,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
   ],
   overrides: [
     {
@@ -63,6 +63,11 @@ module.exports = {
         },
       },
     ],
+    'no-unused-vars': [
+      'warn',
+      // { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
+    ],
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     'import/resolver': {
