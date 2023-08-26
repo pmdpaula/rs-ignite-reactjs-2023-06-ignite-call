@@ -138,13 +138,18 @@ npm i phosphor-react
 
 
 
--[Formulário](https://react-hook-form.com/)
+- [Formulário](https://react-hook-form.com/)
 
 ```bash
 npm i react-hook-form @hookform/resolvers zod
 ```
 
 
+- [Tratamento de datas - dayjs](https://day.js.org/)
+
+```bash
+npm i dayjs
+```
 
 
 ### Back-end
