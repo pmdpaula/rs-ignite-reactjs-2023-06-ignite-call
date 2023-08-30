@@ -21,6 +21,10 @@ const ConnectCalendar = () => {
     signOut();
   }
 
+  function handleNavigateToNextStep() {
+    router.push('/register/time-intervals');
+  }
+
   return (
     <Container>
       <Header>
@@ -67,6 +71,7 @@ const ConnectCalendar = () => {
         )}
 
         <Button
+          onClick={handleNavigateToNextStep}
           type="submit"
           disabled={!isConnected}
         >

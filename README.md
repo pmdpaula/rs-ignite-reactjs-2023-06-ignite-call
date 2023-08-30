@@ -199,6 +199,15 @@ npm i -D @types/cookie
 npm install next-auth
 ```
 
+
+- [Queries - tanstack/react-query](https://react-query.tanstack.com/)
+
+```bash
+npm i @tanstack/react-query
+```
+
+
+
 ## Database
 
 ### MySQL com Docker
