@@ -138,10 +138,18 @@ npm i phosphor-react
 
 
 
-- [Formulário](https://react-hook-form.com/)
+- [Formulário- React Hook Form](https://react-hook-form.com/)
 
 ```bash
-npm i react-hook-form @hookform/resolvers zod
+npm i react-hook-form @hookform/resolvers
+```
+
+
+
+- [Validação - Zod](https://zod.dev/)
+
+```bash
+npm i zod
 ```
 
 
@@ -150,6 +158,8 @@ npm i react-hook-form @hookform/resolvers zod
 ```bash
 npm i dayjs
 ```
+
+
 
 
 ### Back-end
@@ -189,3 +199,17 @@ npm i -D @types/cookie
 npm install next-auth
 ```
 
+## Database
+
+### MySQL com Docker
+
+```bash
+docker run --name ignitecall -e MYSQL_ROOT_PASSWORD=ignitecall -p 3306:3306 -d mysql:latest
+```
+
+Ou use via `Dockerfile`
+
+```bash
+docker build -t ignitecall-mysql .
+docker run --name ignitecall -p 3306:3306 -d ignitecall-mysql
+```
