@@ -36,6 +36,7 @@ interface CalendarProps {
   onDateSelected: (date: Date) => void;
 }
 
+// eslint-disable-next-line no-unused-vars
 export const Calendar = ({ selectedDate, onDateSelected }: CalendarProps) => {
   const [currentDate, setCurrentDate] = useState(() => {
     return dayjs().set('date', 1);

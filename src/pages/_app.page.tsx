@@ -1,4 +1,4 @@
-import './../lib/dayjs.ts';
+import './../lib/dayjs';
 import { QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
