@@ -214,6 +214,15 @@ npm i @tanstack/react-query
 ```
 
 
+- [SEO - next-seo](https://github.com/garmeeh/next-seo)
+
+```bash
+npm i next-seo
+```
+
+TODO: Estudar para geração de imagens para SEO
+[Open Graph (OG) Image Generation](https://vercel.com/docs/functions/edge-functions/og-image-generation)
+
 
 ## Database
 

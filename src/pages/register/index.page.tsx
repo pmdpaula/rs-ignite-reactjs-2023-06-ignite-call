@@ -2,6 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Heading, MultiStep, Text, TextInput } from '@ignite-ui/react';
 import { AxiosError } from 'axios';
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 import { ArrowRight } from 'phosphor-react';
 import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
@@ -60,64 +61,67 @@ const Register = () => {
   }
 
   return (
-    <Container>
-      <Header>
-        <Heading as="strong">Bem vindo ao Ignite Call</Heading>
+    <>
+      <NextSeo title="Crie uma conta | Ignite Call" />
+      <Container>
+        <Header>
+          <Heading as="strong">Bem vindo ao Ignite Call</Heading>
 
-        <Text>
-          Precisamos de algumas informações para criar seu perfil! Ah, você pode editar
-          essas informações depois.
-        </Text>
+          <Text>
+            Precisamos de algumas informações para criar seu perfil! Ah, você pode editar
+            essas informações depois.
+          </Text>
 
-        <MultiStep
-          size={4}
-          currentStep={1}
-        />
-      </Header>
-
-      <Form
-        as="form"
-        onSubmit={handleSubmit(handleRegister)}
-      >
-        <label>
-          <Text size="sm">Nome de usuário</Text>
-          <TextInput
-            prefix="ignite.com/"
-            placeholder="seu-usuario"
-            {...register('username')}
-            crossOrigin={undefined}
+          <MultiStep
+            size={4}
+            currentStep={1}
           />
-          {errors.username ? (
-            <FormError size="xs">{errors.username.message}</FormError>
-          ) : (
-            <Box style={{ border: 0, padding: 0, margin: 0, height: '1.2rem' }} />
-          )}
-        </label>
+        </Header>
 
-        <label>
-          <Text size="sm">Nome completo</Text>
-          <TextInput
-            placeholder="Seu nome"
-            {...register('username')}
-            {...register('name')}
-            crossOrigin={undefined}
-          />
-          {errors.name ? (
-            <FormError size="xs">{errors.name.message}</FormError>
-          ) : (
-            <Box style={{ border: 0, padding: 0, margin: 0, height: '1.2rem' }} />
-          )}
-        </label>
-
-        <Button
-          type="submit"
-          disabled={isSubmitting}
+        <Form
+          as="form"
+          onSubmit={handleSubmit(handleRegister)}
         >
-          Próximo passo
-          <ArrowRight />
-        </Button>
-      </Form>
-    </Container>
+          <label>
+            <Text size="sm">Nome de usuário</Text>
+            <TextInput
+              prefix="ignite.com/"
+              placeholder="seu-usuario"
+              {...register('username')}
+              crossOrigin={undefined}
+            />
+            {errors.username ? (
+              <FormError size="xs">{errors.username.message}</FormError>
+            ) : (
+              <Box style={{ border: 0, padding: 0, margin: 0, height: '1.2rem' }} />
+            )}
+          </label>
+
+          <label>
+            <Text size="sm">Nome completo</Text>
+            <TextInput
+              placeholder="Seu nome"
+              {...register('username')}
+              {...register('name')}
+              crossOrigin={undefined}
+            />
+            {errors.name ? (
+              <FormError size="xs">{errors.name.message}</FormError>
+            ) : (
+              <Box style={{ border: 0, padding: 0, margin: 0, height: '1.2rem' }} />
+            )}
+          </label>
+
+          <Button
+            type="submit"
+            disabled={isSubmitting}
+          >
+            Próximo passo
+            <ArrowRight />
+          </Button>
+        </Form>
+      </Container>
+    </>
   );
 };
 

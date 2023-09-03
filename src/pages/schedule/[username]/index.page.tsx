@@ -1,5 +1,6 @@
 import { Avatar, Heading, Text } from '@ignite-ui/react';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { NextSeo } from 'next-seo';
 
 import ScheduleForm from './ScheduleForm';
 import { Container, UserHeader } from './styles';
@@ -17,16 +18,19 @@ const Schedule = ({ user }: ScheduleProps) => {
   const { name, bio, avatarUrl } = user;
 
   return (
-    <Container>
-      <UserHeader>
-        <Avatar src={avatarUrl} />
+    <>
+      <NextSeo title={`Agendar com ${user.name} | Ignite Call`} />
+      <Container>
+        <UserHeader>
+          <Avatar src={avatarUrl} />
 
-        <Heading>{name}</Heading>
-        <Text>{bio}</Text>
-      </UserHeader>
+          <Heading>{name}</Heading>
+          <Text>{bio}</Text>
+        </UserHeader>
 
-      <ScheduleForm />
-    </Container>
+        <ScheduleForm />
+      </Container>
+    </>
   );
 };
 
